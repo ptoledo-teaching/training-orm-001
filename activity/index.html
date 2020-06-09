@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Jedi vs Sith Clonewars</title>
+  <!-- Metadata -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jedi vs Sith Clonewars">
+  <!-- Resources -->
+  <script src="js/sith.js"></script>
+  <script src="js/jedi.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/repository.js"></script>
+  <link rel="stylesheet" href="css/index.css" />
+  <script>
+    document.addEventListener('DOMContentLoaded', initialize, false);
+  </script>
+</head>
+
+<body>
+  <div id="content">
+    <img src="assets/banner.jpg" id="banner" alt="https://xn--oo-yjab.cl/debate-de-star-wars-jedi-vs-sith/" />
+    <header>
+      <h1>Jedi vs Sith Clonewars</h1>
+      <span>On the quest of learning ORM</span>
+    </header>
+    <h2>Troops</h2>
+    <table id="combat">
+      <thead>
+        <tr>
+          <th>
+            Jedis in Combat
+          </th>
+          <th>
+            Siths in combat
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ul id="jediscombat"></ul>
+          </td>
+          <td>
+            <ul id="sithscombat"></ul>
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>
+            <input id="jedisamount" type="number" min="1" max="10" value="1">
+            <button id="generatejedis">Generate Jedis</button>
+          </td>
+          <td>
+            <input id="sithsamount" type="number" min="1" max="10" value="1">
+            <button id="generatesiths">Generate Siths</button>
+          </td>
+        </tr>
+      </tfoot>
+      </tbody>
+    </table>
+    <button id="fight">Fight!</button>
+    <ul id="combatresult">
+    </ul>
+    <h2>Combat Result</h2>
+    <table id="result">
+      <thead>
+        <tr>
+          <th>
+            Jedis
+          </th>
+          <th>
+            Siths
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ul id="jedisresult"></ul>
+          </td>
+          <td>
+            <ul id="sithsresult"></ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Winner: The <span id="winner">Jedis</span>!</h3>
+    <h2>Archive</h2>
+    <button id="store">Store fighters</button>
+    <button id="read">Recover fighters</button>
+    <p>Last stored combat</p>
+    <table id="stored">
+      <thead>
+        <tr>
+          <th>
+            Jedis
+          </th>
+          <th>
+            Siths
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <pre  id="jedisstored"></pre>
+          </td>
+          <td>
+            <pre  id="sithsstored"></pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

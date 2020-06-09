@@ -1,0 +1,53 @@
+
+body {
+  overflow-y:                            scroll;
+  text-align:                            center;
+  align-items:                           center;
+  font-family:                           Tahoma, Geneva, sans-serif;
+  background-size:                       cover;
+  background-image:                      url('../assets/background.jpg'); /* https://www.starwars.com/news/star-wars-backgrounds */
+  background-repeat:                     no-repeat;
+  background-attachment:                 fixed;
+}
+
+#content {
+  width:                                 800px;
+  border:                                1px solid gray;
+  margin:                                25px auto;
+  padding:                               25px;
+  position:                              relative;
+  padding-top:                           225px;
+  background-color:                      white;
+}
+
+#banner {
+  top:                                   0px;
+  left:                                  0px;
+  width:                                 100%;
+  display:                               block;
+  position:                              absolute;
+}
+
+table {
+  width:                                 100%;
+}
+
+table > * > * > * {
+  width:                                 50%;
+  border:                                1px solid gray;
+  padding:                               5px;
+  vertical-align:                        top;
+}
+
+table > tbody > * > * {
+  text-align:                            left;
+}
+
+#combatresult {
+  width:                                 400px;
+  margin:                                20px auto;
+  padding:                               10px;
+  text-align:                            left;
+  list-style:                            none;
+  background-color:                      gainsboro;
+}
